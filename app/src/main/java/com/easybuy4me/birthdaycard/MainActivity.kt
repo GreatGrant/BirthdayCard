@@ -42,6 +42,7 @@ fun GreetingText(name: String, from: String, modifier: Modifier = Modifier) {
     // Create a column so that texts don't overlap
     Column(
         modifier = modifier,
+        horizontalAlignment = Alignment.End,
         verticalArrangement = Arrangement.Center)
     {
         Text(
@@ -61,6 +62,11 @@ fun GreetingText(name: String, from: String, modifier: Modifier = Modifier) {
                 .align(alignment = Alignment.End)
         )
     }
+}
+
+@Composable
+fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier){
+
 }
 
 @Preview(
